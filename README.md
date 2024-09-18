@@ -5,7 +5,7 @@
 1. [API Setup](#api-setup)
 2. [Overview](#overview)
 3. [Product Spec](#product-spec)
-4. [Wireframes](#wireframes)
+4. [Sample](#sample)
 5. [Schema](#schema)
 
 ## API Setup
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Remaining app lifecycle methods...
 }
-
+```
 ## Overview
 
 ### Description
@@ -96,26 +96,10 @@ This Weather App allows users to get real-time weather information by searching 
 - [ ] [**Main Screen**]
   * Leads to [**Settings Screen**] for modifying app settings like temperature units or notifications.
 
-## Wireframes
 
-### Digital Wireframes & Mockups
+### Sample 
+![WeatherApp](https://github.com/user-attachments/assets/5fdd7b83-3fed-43e6-b5c2-34409b28e297)
 
-#### Main Screen
-![Main Screen](URL-to-image)
-
-#### Search Screen
-![Search Screen](URL-to-image)
-
-#### Settings Screen (Optional)
-![Settings Screen](URL-to-image)
-
-### Interactive Prototype
-
-<div>
-    <a href="URL-to-prototype">
-      <img style="max-width:300px;" src="URL-to-thumbnail">
-    </a>
-</div>
 
 ## Schema
 
