@@ -43,8 +43,7 @@ fastlane/test_output
 *.dSYM.zip
 *.dSYM
 
-# API Keys and Config
-Config.swift
+# API Keys 
 
 # Simulator
 *.simstate

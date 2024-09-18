@@ -13,6 +13,7 @@ struct WeatherView: View {
     @State private var city: String = ""
     @State private var locationManager: LocationManager?
     @State private var showSearchPrompt: Bool = false
+    @State private var isCelsius: Bool = true
     
     // Initialize with the view model.
     init(viewModel: WeatherViewModel) {
@@ -40,20 +41,26 @@ struct WeatherView: View {
             .padding(.horizontal)
             
             Button(action: {
-                
                 locationManager = LocationManager(weatherViewModel: viewModel)
-                
             }) {
                 Text("Use Current Location")
             }
             .padding(.top, 8)
             
             if let weather = viewModel.weather {
-                WeatherRow(weather: weather)
+                WeatherRow(weather: weather, isCelsius: isCelsius)
+                
+                // Button to toggle between Celsius and Fahrenheit
+                Button(action: {
+                    isCelsius.toggle()
+                }) {
+                    Text(isCelsius ? "Switch to °F" : "Switch to °C")
+                        .padding(.top, 8)
+                }
             } else if let errorMessage = viewModel.errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
-            } 
+            }
         }
         .padding()
         .onAppear {
