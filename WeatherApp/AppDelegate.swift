@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //let apiKey = "API KEY HERE only one time"
-        //Config.shared.saveApiKey(apiKey)
+        let apiKey = "14111f719570723842194aefd9b5e41b"
+        Config.shared.saveApiKey(apiKey)
         return true
     }
 
